@@ -1,0 +1,41 @@
+form textarea{
+    resize: none;
+    height: 105px;
+}
+
+form input[type="radio"]{
+    margin: 15px 0;
+}
+
+form input[type="radio"]:not(:first-child){
+    margin-left: 15px;
+}
+
+.status span{
+    padding-left: 0.5em;
+    font-size: 1em;
+}
+
+.status{
+    margin-bottom: 1em;
+}
+
+.btn-dashboard{
+    width: 600px;
+    height: 35px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #006400;
+    color: #FFF;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 925px){
+    .btn-dashboard{
+        width: 100%;
+    }
+}
