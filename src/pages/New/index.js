@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 
-import Header from "../../components/Header";
+import SideBar from "../../components/SideBar";
 import Title from "../../components/Title";
 
 import { FiPlusCircle } from "react-icons/fi";
@@ -148,7 +148,7 @@ export default function New(){
 
     return(
         <div>
-            <Header />
+            <SideBar />
 
             <div className="content">
                 <Title name={id ? "Editando Chamado" : "Novo Chamado"}>

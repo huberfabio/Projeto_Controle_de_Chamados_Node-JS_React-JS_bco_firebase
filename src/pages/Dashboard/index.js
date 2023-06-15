@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-import Header from "../../components/Header";
+import SideBar from "../../components/SideBar";
 import Title from "../../components/Title";
 import { FiPlus, FiMessageSquare, FiSearch, FiEdit2 } from "react-icons/fi";
 
 import { collection, getDocs, orderBy, limit, startAfter, query } from "firebase/firestore";
 import { db } from "../../services/firebaseConnection";
-
-import { Link } from "react-router-dom";
 
 import { format } from "date-fns";
 import Modal from "../../components/Modal";
@@ -92,7 +91,7 @@ export default function Dashboard(){
     if(loading){
         return(
             <div>
-                <Header />
+                <SideBar />
 
                 <div className="content">
                     <Title name="Chamados">
@@ -109,7 +108,7 @@ export default function Dashboard(){
 
     return(
         <div>
-            <Header />
+            <SideBar />
             
             <div className="content">
                 <Title name="Chamados">

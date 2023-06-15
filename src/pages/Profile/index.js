@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import Header from "../../components/Header";
+import SideBar from "../../components/SideBar";
 import Title from "../../components/Title";
 
 import { FiSettings, FiUpload } from "react-icons/fi";
@@ -10,8 +10,9 @@ import { db, storage } from "../../services/firebaseConnection";
 import { doc, updateDoc } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
-import './profile.css'
 import { toast } from "react-toastify";
+
+import './profile.css'
 
 export default function Profile(){
     const { user, storageUser, setUser, logout } = useContext(AuthContext)
@@ -90,7 +91,7 @@ export default function Profile(){
 
     return(
         <div>
-            <Header />
+            <SideBar />
 
             <div className="content"> 
                 <Title name="Minha Conta">

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "../../components/Header"
+import SideBar from "../../components/SideBar"
 import Title from "../../components/Title"
 
 import { FiUser } from "react-icons/fi";
@@ -40,7 +40,7 @@ export default function Customers(){
 
     return(
         <div>
-            <Header/>
+            <SideBar/>
 
             <div className="content">
                 <Title name="Clientes">
